@@ -7,7 +7,7 @@ routeProtectors.userIsLoggedIn = function (req, res, next) {
     next();
   } else {
     errorPrint("User is not logged in!");
-    req.flash("error", "You must be logged in to create a Post!");
+    req.flash("error", "You must be logged in to create a journal entry with Zenful!");
     res.userIsLoggedIn("/login");
   }
 };

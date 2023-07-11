@@ -6,7 +6,7 @@ postMiddleware.getRecentPosts = async function (req, res, next) {
     let results = await getNRecentPosts(8);
     res.locals.results = results;
     if (results.length == 0) {
-      req.flash("error", "There are no posts created yet");
+      req.flash("error", "There are no journal entries created yet");
     }
     next();
   } catch (err) {
