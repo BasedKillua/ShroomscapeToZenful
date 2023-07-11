@@ -29,7 +29,7 @@ nav {
 }
 
 main {
-  background-image: linear-gradient(black, black), url(../images/mushrooms.jpg);
+  background-image: linear-gradient(rgb(67, 61, 61), rgb(66, 61, 61)), url(../images/ZenfulFlowerHome.png);
   background-size: cover;
   background-blend-mode: saturation;
   border: 2px solid rgb(0, 0, 0);
@@ -188,7 +188,7 @@ fieldset {
 
 #sub {
   color: rgb(0, 0, 0);
-  background-color: rgb(138, 24, 129);
+  background-color: green;
 }
 
 #cancel{
