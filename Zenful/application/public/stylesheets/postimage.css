@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 :root {
   --main-radius: 5px;
   --main-padding: 5px;
@@ -8,7 +11,7 @@
   overflow: auto;
   grid-template-columns: 20% 77.5% 2.5%;
   grid-template-rows: 10% 85% 5%;
-  font-family: 'FontAwesome';
+  font-family: 'Comfortaa', cursive;
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
@@ -18,21 +21,21 @@
     "logo nav ."
     "sidebar main ."
     "sidebar footer .";
-    background-color: beige;
+    background-color: #d9b99b;
 }
 
 nav {
-  background: beige;
-  border-bottom: 2px solid beige;
+  background: #d9b99b;
+  border-bottom: 2px solid #d9b99b;
   grid-area: nav;
-  box-shadow: 0 4px 0 0px beige;
+  box-shadow: 0 4px 0 0px #d9b99b;
 }
 
 main {
   background-image: linear-gradient(rgb(67, 61, 61), rgb(66, 61, 61)), url(../images/ZenfulFlowerHome.png);
   background-size: cover;
   background-blend-mode: saturation;
-  border: 2px solid green;
+  border: 2px solid 	#4479e1;
   grid-area: main;
   box-shadow: 0px 0px 4px 4px rgb(39, 39, 39);
 }
@@ -42,7 +45,7 @@ main {
 }
 
 #sidebar:hover ul a {
-  color: green;
+  color: 	#4479e1;
 }
 
 ul li:hover a{
@@ -50,10 +53,10 @@ ul li:hover a{
 }
 
 #sidebar {
-  background: beige;
-  border-right: 2px solid beige;
+  background: #d9b99b;
+  border-right: 2px solid #d9b99b;
   grid-area: sidebar;
-  box-shadow: 4px beige;
+  box-shadow: 4px #d9b99b;
   /* width: 0%; */
   transition: 3s;
 }
@@ -66,14 +69,14 @@ ul li:hover a{
   font-size: 19px;
   box-sizing: border-box;
   transition: .5s;
-  color: green;
+  color: 	#4479e1;
 }
 
 #sidebar ul a:hover {
   width: 100%;
-  color: green;
-  border-top: 1px solid green;
-  border-bottom: 1px solid green;
+  color: 	#4479e1;
+  border-top: 1px solid 	#4479e1;
+  border-bottom: 1px solid #4479e1;
 }
 
 #sidebar:hover {
@@ -82,20 +85,20 @@ ul li:hover a{
 
 #exp {
   margin-top: 10px;
-  color: green;
+  color: #4479e1;
   font-size: 21px;
 }
 
 footer {
-  background: beige;
-  border-top: 4px dashed green;
+  background: #d9b99b;
+  border-top: 4px dashed #4479e1;
   grid-area: footer;
-  color: green;
+  color: #4479e1;
   padding-top: .2em;
 }
 
 #tippity {
-  background: beige;
+  background: #d9b99b;
   grid-area: nav;
   display: grid;
   grid-template-columns: 80% 20%;
@@ -109,9 +112,9 @@ footer {
   grid-area: search;
 }
 #name {
-  color: green;
+  color: #4479e1;
   font-size: 40px;
-  font-family: 'FontAwesome';
+  font-family: 'Comfortaa', cursive;
   grid-area: title;
 }
 
@@ -125,7 +128,7 @@ footer {
 }
 #logo {
   grid-area: logo;
-  background-color:		#e4d5b7;
+  background-color:		#d9b99b;
   box-shadow: 0 4px 0 4px rgb(0, 0, 0);
 }
 
@@ -188,7 +191,7 @@ fieldset {
 
 #sub {
   color: rgb(0, 0, 0);
-  background-color: green;
+  background-color: #4479e1;
 }
 
 #cancel{
@@ -285,7 +288,7 @@ i {
 
 .alert-success {
   color: black;
-  background-color: green;
+  background-color: #4479e1;
 }
 
 .alert-danger {
@@ -356,7 +359,7 @@ div[class=card] > img {
 }
 
 #search-button{
-  background-color: green;
+  background-color: #4479e1;
   width: 25px;
   padding-right: .4em;
   border-radius: 25%;
