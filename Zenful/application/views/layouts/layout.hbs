@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Post</title>
+    <link rel="stylesheet" href="/public/stylesheets/postimage.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/public/js/frontendjs.js"></script>
+  </head>
+  <body>
+    <div class="layout">
+      {{> logo}}
+      {{> banner}}
+      {{#if (emptyObject messages)}}
+      {{> flashmessage}}
+      {{/if}}
+      {{> sidebar}}
+      {{{body}}}
+      {{> footer}}
+    </div>
+
+    {{#if logged}}
+    <script>
+      let ele = document.getElementById('logout-button');
+      if(ele) {
+        ele.onclick = (even) => {
+          fetch('/users/logout',{
+            method:"POST"
+          })
+          .then((data) => {
+            location.replace('/');
+          })
+        }
+      }
+    </script>
+    {{/if}}
+  </body>
+</html>

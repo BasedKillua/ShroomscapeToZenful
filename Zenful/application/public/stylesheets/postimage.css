@@ -1,0 +1,366 @@
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+.layout {
+  display: grid;
+  height: 100vh;
+  overflow: auto;
+  grid-template-columns: 20% 77.5% 2.5%;
+  grid-template-rows: 10% 85% 5%;
+  font-family: 'FontAwesome';
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  grid-template-areas:
+    "logo nav ."
+    "sidebar main ."
+    "sidebar footer .";
+    background-color: black;
+}
+
+nav {
+  background: rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  grid-area: nav;
+  box-shadow: 0 4px 0 0px rgb(0, 0, 0);
+}
+
+main {
+  background-image: linear-gradient(black, black), url(../images/mushrooms.jpg);
+  background-size: cover;
+  background-blend-mode: saturation;
+  border: 2px solid rgb(0, 0, 0);
+  grid-area: main;
+  box-shadow: 0px 0px 4px 4px rgb(39, 39, 39);
+}
+
+#sidebar:hover {
+  width: 100%;
+}
+
+#sidebar:hover ul a {
+  color: rgb(108, 21, 101);
+}
+
+ul li:hover a{
+  margin-left: 5%;
+}
+
+#sidebar {
+  background: rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
+  grid-area: sidebar;
+  box-shadow: 4px rgb(0, 0, 0);
+  /* width: 0%; */
+  transition: 3s;
+}
+
+#sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 19px;
+  box-sizing: border-box;
+  transition: .5s;
+  color: transparent;
+}
+
+#sidebar ul a:hover {
+  width: 100%;
+  color: rgb(138, 24, 129);
+  border-top: 1px solid rgb(124, 55, 118);
+  border-bottom: 1px solid rgb(80, 3, 73);
+}
+
+#sidebar:hover {
+  color: transparent;
+}
+
+#exp {
+  margin-top: 10px;
+  color: rgb(138, 24, 129);
+  font-size: 21px;
+}
+
+footer {
+  background: rgb(0, 0, 0);
+  border-top: 4px dashed rgb(32, 32, 32);
+  grid-area: footer;
+  color: rgb(138, 24, 129);
+  padding-top: .2em;
+}
+
+#tippity {
+  background: rgb(0, 0, 0);
+  grid-area: nav;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: 
+    "title search";
+  height: 10%;
+}
+.search {
+  width: 100%;
+  padding: .5em;
+  grid-area: search;
+}
+#name {
+  color: rgb(138, 24, 129);
+  font-size: 40px;
+  font-family: 'FontAwesome';
+  grid-area: title;
+}
+
+#logoP {
+  max-width: 100%;
+  max-height: 90%;
+  object-fit: contain;
+  margin: 5%;
+  background: black;
+  border-radius: 25%;
+}
+#logo {
+  grid-area: logo;
+  background-color: black;
+  box-shadow: 0 4px 0 4px rgb(0, 0, 0);
+}
+
+#bippity {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-weight: 500;
+}
+
+#mids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(142, 142, 142);
+  margin: 2%;
+  box-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+.mids-sp-photo {
+  height: auto;
+  max-height: 90%;
+  gap: 10px;
+  background-color: rgb(0, 0, 0);
+}
+
+.mids-photos {
+  display: grid;
+  gap: .2rem .2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  padding-bottom: 50px;
+  padding-top: .35em;
+  background-color: black;
+  overflow: auto;
+}
+.lighter {
+  background-color: rgb(210, 210, 210);
+}
+
+legend {
+  border: 2px solid #eee;
+  box-shadow: 4px 4px 4px rgb(0, 0, 0);
+  background-color: #eee;
+}
+fieldset {
+  border: 2px solid rgb(99, 99, 99);
+  box-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+#sBarTitle {
+  font-size: 4px; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+#sub {
+  color: rgb(0, 0, 0);
+  background-color: rgb(138, 24, 129);
+}
+
+#cancel{
+  background-color: rgb(109, 109, 109);
+}
+
+#logoP:hover #exp {
+  color: transparent
+}
+
+#fakeI {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 4px 4px 4px rgb(0, 0, 0);
+  margin: 5px;
+}
+
+.vp-spaced {
+  margin: .2em;
+  border: 2px solid rgb(0, 0, 0);
+  max-height: 75%;
+  background-color: rgb(189, 189, 189);
+}
+#vp-title {
+  padding-top: .2em;
+  font-size: larger;
+  background-color: rgb(128, 128, 128);
+  border: 2px solid rgb(0, 0, 0);
+}
+#vp-author {
+  padding-top: .1em;
+}
+#vp-date {
+  font-size: xx-small;
+}
+#vp-description {
+  overflow: auto;
+}
+#image-post-image {
+  height: 100%;
+  width: 100%;
+  max-height: 75%;
+  object-fit: cover;
+  padding: .3em;
+  background-color: black;
+}
+.comments {
+  background-color: rgb(128, 128, 128);
+  border: 2px solid rgb(0, 0, 0);
+}
+#comment-box {
+  width: 100%;
+  max-height: 15%;
+}
+#comment-area {
+  width: 80%;
+  height: 100%;
+}
+.comments-comp-area {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+textarea {
+  resize: none;
+}
+
+#description{
+  margin: 5px;
+}
+
+#flash-message {
+  position: fixed;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%,0);
+  z-index: 9999;
+}
+#flash-message > div {
+  text-align: center;
+}
+
+label {
+  border: 1px solid rgb(85, 85, 85); 
+}
+
+#checks {
+  border: 1px solid transparent; 
+}
+
+i {
+  margin: 3px;
+}
+
+.alert-success {
+  color: black;
+  background-color: green;
+}
+
+.alert-danger {
+  color: black(0, 0, 0);
+  background-color: red;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 186px 150px;
+  border: .0625rem solid rgb(138, 24, 129);
+  border-radius: .25rem;
+  box-shadow: 0 2px 2px rgb(138, 24, 129);
+}
+.card-image {
+  grid-area: 1 / 1 / 2 / 2;
+  object-fit: contain;
+}
+
+div[class=card] > img {
+  height: 100%;
+  width: 100%;
+}
+.card-title {
+  color: rgb(196, 185, 195);
+  margin-bottom: .1rem;
+  margin-top: 0;
+  padding-top: .1rem;
+  height: 22.5%;
+}
+.card-body {
+  grid-area: 2 / 1 / 3 / 2;
+  float: right;
+  padding: .75rem;
+  background-color: rgb(119, 18, 111);
+  border-radius: 0 0 .2rem .2rem;
+}
+.card-text {
+  color: rgb(0, 0, 0);
+  font-size: smaller;
+  height: 65%;
+  overflow: auto;
+}
+
+.anchor-buttons {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 2rem;
+  border: .0625rem solid rgb(0, 0, 0);
+  background-color: rgb(110, 18, 103);
+  border-radius: .25rem;
+  font-weight: bold;
+  font-size: larger;
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+.anchor-buttons:hover {
+  box-shadow: none;
+  padding: 0;
+  color: rgb(172, 25, 159);
+  background-color: rgb(159, 114, 155);
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+#search-button{
+  background-color: rgb(172, 25, 159);
+  width: 25px;
+  padding-right: .4em;
+  border-radius: 25%;
+}
+#search-text {
+  max-width: 100px;
+}

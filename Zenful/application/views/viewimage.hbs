@@ -1,0 +1,23 @@
+
+<main>
+  <fieldset class="mids-sp-photo" id="mids">
+    <legend><a href="/">scape</a></legend>
+    <img id="image-post-image" src="/{{currentPost.photopath}}" alt="" />
+    <ul class="vp-spaced">
+      <li id="vp-title">{{currentPost.title}}</li>
+      <li id="vp-author">@{{currentPost.username}}</li>
+      <li id="vp-date">{{currentPost.created}}</li>
+      <li  id="vp-desc">{{currentPost.description}}</li>
+      <li class="comments">Comments</li>
+      <div class="comments-comp-area">
+        <div id="comment-box">
+          <form action="">
+            <textarea placeholder="Comment" name="comment" id="comment-area"></textarea>
+            <button type="submit">post</button>
+          </form>
+        </div>
+        
+      </div>
+    </ul>
+  </fieldset>
+</main>
