@@ -18,21 +18,21 @@
     "logo nav ."
     "sidebar main ."
     "sidebar footer .";
-    background-color: black;
+    background-color: beige;
 }
 
 nav {
-  background: rgb(0, 0, 0);
-  border-bottom: 2px solid rgb(0, 0, 0);
+  background: beige;
+  border-bottom: 2px solid beige;
   grid-area: nav;
-  box-shadow: 0 4px 0 0px rgb(0, 0, 0);
+  box-shadow: 0 4px 0 0px beige;
 }
 
 main {
   background-image: linear-gradient(rgb(67, 61, 61), rgb(66, 61, 61)), url(../images/ZenfulFlowerHome.png);
   background-size: cover;
   background-blend-mode: saturation;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid green;
   grid-area: main;
   box-shadow: 0px 0px 4px 4px rgb(39, 39, 39);
 }
@@ -42,7 +42,7 @@ main {
 }
 
 #sidebar:hover ul a {
-  color: rgb(108, 21, 101);
+  color: green;
 }
 
 ul li:hover a{
@@ -50,10 +50,10 @@ ul li:hover a{
 }
 
 #sidebar {
-  background: rgb(0, 0, 0);
-  border-right: 2px solid rgb(0, 0, 0);
+  background: beige;
+  border-right: 2px solid beige;
   grid-area: sidebar;
-  box-shadow: 4px rgb(0, 0, 0);
+  box-shadow: 4px beige;
   /* width: 0%; */
   transition: 3s;
 }
@@ -66,14 +66,14 @@ ul li:hover a{
   font-size: 19px;
   box-sizing: border-box;
   transition: .5s;
-  color: transparent;
+  color: green;
 }
 
 #sidebar ul a:hover {
   width: 100%;
-  color: rgb(138, 24, 129);
-  border-top: 1px solid rgb(124, 55, 118);
-  border-bottom: 1px solid rgb(80, 3, 73);
+  color: green;
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
 }
 
 #sidebar:hover {
@@ -82,20 +82,20 @@ ul li:hover a{
 
 #exp {
   margin-top: 10px;
-  color: rgb(138, 24, 129);
+  color: green;
   font-size: 21px;
 }
 
 footer {
-  background: rgb(0, 0, 0);
-  border-top: 4px dashed rgb(32, 32, 32);
+  background: beige;
+  border-top: 4px dashed green;
   grid-area: footer;
-  color: rgb(138, 24, 129);
+  color: green;
   padding-top: .2em;
 }
 
 #tippity {
-  background: rgb(0, 0, 0);
+  background: beige;
   grid-area: nav;
   display: grid;
   grid-template-columns: 80% 20%;
@@ -109,7 +109,7 @@ footer {
   grid-area: search;
 }
 #name {
-  color: rgb(138, 24, 129);
+  color: green;
   font-size: 40px;
   font-family: 'FontAwesome';
   grid-area: title;
@@ -125,7 +125,7 @@ footer {
 }
 #logo {
   grid-area: logo;
-  background-color: black;
+  background-color:		#e4d5b7;
   box-shadow: 0 4px 0 4px rgb(0, 0, 0);
 }
 
@@ -356,7 +356,7 @@ div[class=card] > img {
 }
 
 #search-button{
-  background-color: rgb(172, 25, 159);
+  background-color: green;
   width: 25px;
   padding-right: .4em;
   border-radius: 25%;
